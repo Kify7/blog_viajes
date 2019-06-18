@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blog de Viajes</title>
+    <script src="https://kit.fontawesome.com/f178e9af8c.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -15,12 +16,19 @@
         <img src="img/logo.png" alt="logotipo">
     </header>
     <div class="barra">
-        <nav class="navegacion-principal contenedor">
+        <a href="#nav" class="mobile-menu">
+            <i class="fas fa-ellipsis-v"></i>
+        </a>
+        <nav id="nav" class="navegacion-principal contenedor">
             <a href="#">Inicio</a>
             <a href="#">Nosotros</a>
             <a href="#">Blog</a>
             <a href="#">Tienda</a>
             <a href="#">Contacto</a>
+
+            <a href="#" class="cerrar">
+                    <i class="fas fa-times"></i>
+            </a>
         </nav>
     </div>
 
@@ -76,6 +84,27 @@
             </section>
         </aside>
     </div> <!-- contenedor principal -->
+
+    <footer class="footer-site">
+        <div class="contenedor clearfix">
+            <section class="nosotros">
+                <h2>Sobre Nosotros</h2>
+                <p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which
+                    looks reasonable</p>
+            </section>
+            <section class="menu">
+                <h2>Menú de Navegación</h2>
+                <nav>
+                    <a href="#">Inicio</a>
+                    <a href="#">Nosotros</a>
+                    <a href="#">Tienda</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </section>
+        </div><!-- contenedor -->
+        <p class="copyright">Blog de Viajes - Todos los derechos reservados 2019 &copy;</p>
+    </footer>
 </body>
 
 </html>
